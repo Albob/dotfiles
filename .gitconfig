@@ -17,3 +17,7 @@
 	df = diff
 	di = diff --stat -r
 	ls = log --oneline --graph --decorate
+	last = log -l HEAD
+	ds = diff --staged
+[core]
+	editor = subl -w

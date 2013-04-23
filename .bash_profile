@@ -16,6 +16,6 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
 fi
 
 alias ll="ls -lhG"
-alias l="ll"
 alias la="ls -lahG"
+alias l="la"
 alias rm="rm -i"
