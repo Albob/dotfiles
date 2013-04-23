@@ -1,0 +1,19 @@
+[user]
+	name = Alexis Bauchu
+	email = alexis@prettysimplegames.com
+[push]
+	default = simple
+[color]
+	ui = auto
+	diff = auto
+	status = auto
+	branch = auto
+	interactive = auto
+[alias]
+	ci = commit -v
+	st = status
+	br = branch -la
+	co = checkout
+	df = diff
+	di = diff --stat -r
+	ls = log --oneline --graph --decorate
