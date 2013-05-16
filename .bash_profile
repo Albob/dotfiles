@@ -11,8 +11,10 @@ bind '"\e\e[D": backward-word'
 bind '"\e\e[C": forward-word'
 bind "set completion-ignore-case on"
 
-if [ -f $(brew --prefix)/etc/bash_completion ]; then
-    . $(brew --prefix)/etc/bash_completion
+if [ -f $(which brew) ]; then
+    if [ -f $(brew --prefix)/etc/bash_completion ]; then
+        . $(brew --prefix)/etc/bash_completion
+    fi
 fi
 
 alias ll="ls -lhG"
