@@ -21,3 +21,9 @@
 	ds = diff --staged
 [core]
 	editor = subl -w
+[merge]
+	tool = p4merge
+[mergetool]
+	trustExitCode = false
+[mergetool "p4merge"]
+	cmd = p4merge $BASE $REMOTE $LOCAL $MERGED
