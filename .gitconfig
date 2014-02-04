@@ -17,6 +17,7 @@
 	df = diff
 	di = diff --stat -r
 	ls = log --oneline --graph --decorate
+	la = log --pretty=format:'%Cred%h%Creset %s %Cgreenby \"%cn\" %Cblue(%ar)%Creset' --graph --decorate
 	last = log -l HEAD
 	ds = diff --staged
 [core]

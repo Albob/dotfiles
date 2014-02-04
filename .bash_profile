@@ -11,19 +11,25 @@ bind '"\e\e[D": backward-word'
 bind '"\e\e[C": forward-word'
 bind "set completion-ignore-case on"
 
-if [ $(which brew) ]; then
-    if [ -f $(brew --prefix)/etc/bash_completion ]; then
-        . $(brew --prefix)/etc/bash_completion
-    fi
-fi
-
 LS_FLAGS=""
 
 if [ $(uname) = "Linux" ]; then
     LS_FLAGS="--color=always"
+else
+    if [ $(which brew) ]; then
+        if [ -f $(brew --prefix)/etc/bash_completion ]; then
+            . $(brew --prefix)/etc/bash_completion
+        fi
+    fi
 fi
 
 alias ll="ls -lhG $LS_FLAGS"
 alias la="ls -lahG $LS_FLAGS"
 alias l="la $LS_FLAGS"
 alias rm="rm -i"
+alias less="less -x4" # sets default tab length to 4
+
+function udiff ()
+{
+    diff -u $* | colordiff | less -R;
+}
