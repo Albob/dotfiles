@@ -1,0 +1,12 @@
+#key "Alt+F1" gexec
+#key "Ctrl+Alt+t" urxvtc -title Terminal -fn "xft:Bitstream Vera Sans Mono:pixelsize=12"
+key "F15" amixer -c 0 set Master 1+
+key "F14" amixer -c 0 set Master 1-
+key "Ctrl+Alt+e" pcmanfm
+key "Ctrl+Alt+g" gvim
+key "Ctrl+Alt+i" firefox
+key "Ctrl+Alt+l" xlock
+key "Ctrl+Alt+m" pavucontrol pavucontrol
+key "Ctrl+Alt+n" nautilus --no-desktop
+key "Ctrl+Alt+t" urxvt -title Terminal -bg rgb:0000/0000/0000 -fg rgb:ffff/ffff/ffff
+key "Print" gnome-screenshot

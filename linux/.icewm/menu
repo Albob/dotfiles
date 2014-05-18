@@ -1,0 +1,15 @@
+prog "Home" folder pcmanfm
+prog "Terminal" xterm urxvtcd -title Terminal -fn "xft:Bitstream Vera Sans Mono:pixelsize=12"
+prog "Firefox" firefox firefox
+prog "Pidgin" /usr/share/icons/hicolor/16x16/apps/pidgin.png pidgin
+#prog "Synaptic" synaptic gksudo synaptic
+#prog "Update Manager" /usr/share/icons/Tango/16x16/apps/system-software-update.png gksudo update-manager
+prog "Update" urxvtc urxvtc -e sudo pacman -Syu
+prog "Calculatrice" galculator galculator
+prog "Changer fond d'écran" python python /home/regis/bin/changer_wallpaper.py
+prog "Installer thème" python python /home/regis/bin/installer_theme.py
+#prog "Firewall" gksudo gksudo geany /etc/network/if-pre-up.d/iptables-start
+prog "Kaamelott" vlc vlc /media/sda1/Vidéo/Séries/kaamelott
+#prog "Musique" lxmusic urxvtcd -g 160x1000 -fg Black -bg White -rv -e "ncmpcpp"
+prog "Musique" vlc vlc /media/sda1/Musique
+#prog "Control Center" gnome-control-center gnome-control-center

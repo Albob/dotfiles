@@ -1,0 +1,10 @@
+xmodmap -e "keycode 122=F14"&
+xmodmap -e "keycode 123=F15"&
+pulseaudio&
+#urxvtd -q&
+#numlockx&
+nm-applet&
+#gnome-power-manager&
+#/usr/lib/gnome-volume-manager/gnome-volume-manager --sm-disable&
+#thunderbird&
+xset m 1 # change mouse sensibility

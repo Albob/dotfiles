@@ -1,0 +1,12 @@
+TitleFontNameXft="sans-serif:size=8"
+NormalTaskBarFontNameXft="sans-serif:size=8"
+ActiveTaskBarFontNameXft="sans-serif:size=8"
+MenuFontNameXft="sans-serif:size=8"
+InputFontNameXft="monospace:size=10"
+ToolTipFontNameXft="sans-serif:size=8"
+NormalButtonFontNameXft="sans-serif:size=8"
+ActiveButtonFontNameXft="sans-serif:size=8"
+ClockFontNameXft="sans-serif:size=8"
+ApmFontNameXft="sans-serif:size=8"
+
+DesktopBackgroundImage="/home/regis/images/tornade.jpg"
