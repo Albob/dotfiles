@@ -7,7 +7,7 @@ export GIT_PS1_SHOWDIRTYSTATE=true
 export GIT_PS1_SHOWUNTRACKEDFILES=true
 export LC_ALL=C
 
-PS1='\[\033[33m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]$(__git_ps1 ":\[\e[01;33m\]%s")\[\e[00m\]\$ '
+PS1='[\[\033[33m\]@\h\[\033[00m\]][\[\033[01;34m\]\w\[\033[00m\]]$(__git_ps1 "[\[\e[01;33m\]%s]")\[\e[00m\]\$ '
 bind '"\e[A": history-search-backward'
 bind '"\e[B": history-search-forward'
 bind '"\e\e[D": backward-word'
