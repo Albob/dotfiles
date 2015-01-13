@@ -1,3 +1,6 @@
+. ~/bin/git-completion.bash
+. ~/bin/git-prompt.sh
+
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 export PATH="~/bin:/usr/local/bin:/usr/local/sbin:$PATH:~/Projects/phabricator/arcanist/bin"
@@ -26,8 +29,23 @@ alias l="la $LS_FLAGS"
 alias rm="rm -i"
 alias less="less -x4" # sets default tab length to 4
 alias stashrebase="git stash && git pull --rebase && git stash pop"
+alias gst="git status"
+alias gdf="git diff"
+alias gds="git diff --staged"
+alias gci="git commit -v"
+alias gaa="git add -A"
+alias gap="git add -p"
+alias gpush="git push"
+alias gfetch="git fetch"
+alias grebase="git pull --rebase"
+alias gpull="git pull"
 
 function udiff ()
 {
     diff -u $* | colordiff | less -R;
+}
+
+function reloadProfile ()
+{
+    source ~/.bash_profile
 }
