@@ -26,7 +26,6 @@ alias la="ls -lahG"
 alias l="la $LS_FLAGS"
 alias rm="rm -i"
 alias less="less -x4" # sets default tab length to 4
-alias stashrebase="git stash && git pull --rebase && git stash pop"
 alias gst="git status"
 alias gdf="git diff"
 alias gds="git diff --staged"
@@ -45,5 +44,5 @@ function udiff ()
 
 function reloadProfile ()
 {
-    source ~/.bash_profile
+    . ~/.bash_profile
 }
