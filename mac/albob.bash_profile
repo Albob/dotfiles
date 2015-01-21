@@ -3,9 +3,7 @@
 
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
-export PATH="~/bin:/usr/local/bin:/usr/local/sbin:$PATH:~/Projects/phabricator/arcanist/bin"
-export SVN_SSH="ssh -i $HOME/.ssh/id_rsa-svn"
-export WASH_DIR="/Users/alexisprettysimple/Projects/Washington"
+export PATH="~/bin:/usr/local/bin:/usr/local/sbin:$PATH"
 export GIT_PS1_SHOWDIRTYSTATE=true
 export GIT_PS1_SHOWUNTRACKEDFILES=true
 export LC_ALL=C
