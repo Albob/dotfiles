@@ -2,7 +2,6 @@ export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 export PATH="~/bin:/usr/local/bin:/usr/local/sbin:$PATH:~/Projects/phabricator/arcanist/bin"
 export SVN_SSH="ssh -i $HOME/.ssh/id_rsa-svn"
-export WASH_DIR="/Users/alexisprettysimple/Projects/Washington"
 export GIT_PS1_SHOWDIRTYSTATE=true
 export GIT_PS1_SHOWUNTRACKEDFILES=true
 
@@ -32,6 +31,8 @@ alias gpush="git push"
 alias gfetch="git fetch"
 alias grebase="git pull --rebase"
 alias gpull="git pull"
+alias gstash="git stash"
+alias gpop="git stash pop"
 alias ack="ack-grep"
 
 function udiff ()
