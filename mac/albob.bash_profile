@@ -36,6 +36,8 @@ alias gpush="git push"
 alias gfetch="git fetch"
 alias grebase="git pull --rebase"
 alias gpull="git pull"
+alias gstash="git stash"
+alias gpop="git stash pop"
 
 function udiff ()
 {
