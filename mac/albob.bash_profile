@@ -3,7 +3,7 @@
 
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
-export PATH="~/bin:/usr/local/bin:/usr/local/sbin:$PATH"
+export PATH="~/bin:/usr/local/sbin:/usr/local/bin:$PATH"
 export GIT_PS1_SHOWDIRTYSTATE=true
 export GIT_PS1_SHOWUNTRACKEDFILES=true
 export LC_ALL=C
