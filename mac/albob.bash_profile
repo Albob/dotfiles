@@ -12,6 +12,12 @@ export GIT_PS1_SHOWDIRTYSTATE=true
 export GIT_PS1_SHOWUNTRACKEDFILES=true
 export LC_ALL=C
 
+## History stuff (appends only unique entries, from all terms)
+unset HISTFILESIZE
+export PROMPT_COMMAND="history -a"
+shopt -s histappend
+export HISTIGNORE="&"
+
 # Change the prompt to show git status
 PS1='[\[\033[33m\]@\h\[\033[00m\]][\[\033[01;34m\]\w\[\033[00m\]]$(__git_ps1 "[\[\e[01;33m\]%s]")\[\e[00m\]\$ '
 
