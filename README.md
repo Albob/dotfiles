@@ -6,6 +6,12 @@ It's so nice to have your .files accessible from all around the world, isn't it?
 Bash profile
 ============
 
+To make this run, you'll need to have a proper bash completion installed. On the Mac, I recommend to install the `bash_completion` package which contains `__git_ps1`:
+
+```bash
+brew install bash_completion
+```
+
 To load these setting in the current session without overwritting `.bash_profile`, copy the following line and paste it in a terminal:
 
 ```bash
