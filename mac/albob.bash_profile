@@ -13,7 +13,8 @@ export GIT_PS1_SHOWUNTRACKEDFILES=true
 export LC_ALL=C
 
 ## History stuff (appends only unique entries, from all terms)
-unset HISTFILESIZE
+export HISTFILESIZE=2048
+export HISTSIZE=2048
 export PROMPT_COMMAND="history -a"
 shopt -s histappend
 export HISTIGNORE="&"
