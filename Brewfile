@@ -12,5 +12,7 @@ brew 'mas'
 brew 'the_silver_searcher'
 brew 'wget'
 brew 'youtube-dl'
+cask 'google-chrome'
+cask 'firefox'
 mas 'The Unarchiver', id: 425424353
 mas 'Filedrop', id: 659443478
