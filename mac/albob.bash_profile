@@ -40,9 +40,10 @@ fi
 # Set aliases
 LS_FLAGS="-hG --color=always"
 alias ll="ls -l $LS_FLAGS"
-alias la="ls -fla $LS_FLAGS"
+alias la="ls -la $LS_FLAGS"
 alias l="la"
 alias rm="rm -i"
+alias du="du -h"
 alias less="less -x4" # sets default tab length to 4
 alias gst="git status"
 alias gdf="git diff"
