@@ -57,9 +57,10 @@ alias grebase="git pull --rebase"
 alias gpull="git pull"
 alias gstash="git stash"
 alias gpop="git stash pop"
+alias gbr="git branch -la"
+alias gver="git --version"
 
 # Utility functions
-
 function udiff ()
 {
     diff -u $* | colordiff | less -R;
