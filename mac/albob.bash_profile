@@ -38,9 +38,8 @@ fi
 
 
 # Set aliases
-LS_FLAGS="-hG --color=always"
-alias ll="ls -l $LS_FLAGS"
-alias la="ls -la $LS_FLAGS"
+alias ll="ls -lhG"
+alias la="ls -lahG"
 alias l="la"
 alias rm="rm -i"
 alias du="du -h"
