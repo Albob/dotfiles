@@ -14,5 +14,5 @@ brew 'wget'
 brew 'youtube-dl'
 cask 'google-chrome'
 cask 'firefox'
-mas 'The Unarchiver', id: 425424353
 mas 'Filedrop', id: 659443478
+mas 'Xcode', id: 497799835
