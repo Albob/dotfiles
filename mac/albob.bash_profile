@@ -21,7 +21,7 @@ shopt -s histappend
 export HISTIGNORE="&"
 
 # Change the prompt to show git status
-PS1='[\[\033[33m\]@\h\[\033[00m\]][\[\033[01;34m\]\w\[\033[00m\]]$(__git_ps1 "[\[\e[01;33m\]%s]")\[\e[00m\]\n\$ '
+PS1='[\[\033[33m\]\u@\h\[\033[00m\]][\[\033[01;34m\]\w\[\033[00m\]]$(__git_ps1 "[\[\e[01;33m\]%s]")\[\e[00m\]\n\$ '
 
 # Bind keyboard keys to behavior
 bind '"\e[A": history-search-backward'
