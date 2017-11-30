@@ -3,6 +3,7 @@
 # Resolve path and completion for git (necessitate to copy the files there first)
 . ~/bin/git-completion.bash
 . ~/bin/git-prompt.sh
+. ~/bin/git-lfs.bash_completion.sh
 
 # Set environment
 export CLICOLOR=1
