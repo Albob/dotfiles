@@ -39,9 +39,7 @@ fi
 
 
 # Set aliases
-alias ll="ls -lhG"
-alias la="ls -lahG"
-alias l="la"
+alias l="ls -lahG --color='always'"
 alias rm="rm -i"
 alias du="du -h"
 alias less="less -x4" # sets default tab length to 4
