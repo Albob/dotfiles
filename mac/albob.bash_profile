@@ -19,6 +19,7 @@ export HISTSIZE=2048
 export PROMPT_COMMAND="history -a"
 shopt -s histappend
 export HISTIGNORE="&"
+export HISTCONTROL="ignoreboth" # ignore both duplicates and commands leading with a white space
 
 # Change the prompt to show git status
 PS1='[\[\033[33m\]\u@\h\[\033[00m\]][\[\033[01;34m\]\w\[\033[00m\]]$(__git_ps1 "[\[\e[01;33m\]%s]")\[\e[00m\]\n\$ '
