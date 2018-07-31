@@ -48,6 +48,7 @@ alias gst="git status"
 alias gdf="git diff"
 alias gds="git diff --staged"
 alias gci="git commit"
+alias gciv="git commit -v"
 alias gaa="git add -A"
 alias gap="git add -p"
 alias gpush="git push"
@@ -57,7 +58,6 @@ alias gpull="git pull"
 alias gstash="git stash"
 alias gpop="git stash pop"
 alias gbr="git branch -la"
-alias gver="git --version"
 
 # Utility functions
 function udiff ()
