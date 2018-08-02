@@ -1,0 +1,33 @@
+#! /bin/bash
+
+set -e
+
+function main()
+{
+    local gameobject=$1
+    local search=$( find . | grep -i "$1" | grep "\.meta" )
+    local resultCount=$(echo $search | tr " " "\n" | wc -l)
+
+    if [ -z "$search" ]; then
+        echo "No results for gameobject \"$gameobject\""
+        exit 1;
+    elif [ "$resultCount" == "1" ]; then
+        local usageFiles=$(cat $search | grep guid | cut -d" " -f2 | xargs ag -l)
+        local usageCount=$(echo "$usageFiles" | wc -l)
+        echo "The object \"$gameobject\" is used $usageCount time(s):"
+       
+        for f in $usageFiles; do
+            echo "  $f"
+        done
+
+        if [ "$usageCount" == "1" ]; then
+            echo "It seems safe to destroy the object $gameobject."
+        fi
+    else
+        echo "More than one result. Refine your search."
+        echo "Results:"
+        echo "$search"
+    fi
+}
+
+main $*
