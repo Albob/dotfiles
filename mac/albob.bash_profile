@@ -1,17 +1,18 @@
 #!/bin/bash
 
-# Resolve path and completion for git (necessitate to copy the files there first)
-. ~/bin/git-completion.bash
-. ~/bin/git-prompt.sh
-. ~/bin/git-lfs.bash_completion.sh
-
 # Set environment
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 export PATH="~/bin:/usr/local/sbin:/usr/local/bin:$PATH"
 export GIT_PS1_SHOWDIRTYSTATE=true
 export GIT_PS1_SHOWUNTRACKEDFILES=true
-export LC_ALL=C
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
+# Resolve path and completion for git (necessitate to copy the files there first)
+. ~/bin/git-completion.bash
+. ~/bin/git-prompt.sh
+. ~/bin/git-lfs.bash_completion.sh
 
 ## History stuff (appends only unique entries, from all terms)
 export HISTFILESIZE=2048
