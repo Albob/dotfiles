@@ -65,3 +65,9 @@ function reloadProfile ()
 {
     . ~/.bash_profile
 }
+
+function myip ()
+{
+    ifconfig | grep "192\.168\." | cut -d" " -f2
+}
+
