@@ -54,6 +54,7 @@ alias gpull="git pull"
 alias gstash="git stash"
 alias gpop="git stash pop"
 alias gbr="git branch -la"
+alias sed=gsed
 
 # Utility functions
 function udiff ()
@@ -69,5 +70,10 @@ function reloadProfile ()
 function myip ()
 {
     ifconfig | grep "192\.168\." | cut -d" " -f2
+}
+
+function listGitTags ()
+{
+    git la | sed -n 's/.*\[\(.*\)\].*/\1/p' | sort -u
 }
 
