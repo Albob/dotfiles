@@ -23,7 +23,8 @@ export HISTIGNORE="&"
 export HISTCONTROL="ignoreboth" # ignore both duplicates and commands leading with a white space
 
 # Change the prompt to show git status
-PS1='[\[\033[33m\]\u@\h\[\033[00m\]][\[\033[01;34m\]\w\[\033[00m\]]$(__git_ps1 "[\[\e[01;33m\]%s]")\[\e[00m\]\n\$ '
+GIT_PS1=$(__git_ps1 "[\[\e[01;33m\]%s\[\e[00m\]]")
+PS1="[\[\033[33m\]\u@\h\[\033[00m\]][\[\033[01;34m\]\w\[\033[00m\]]$GIT_PS1\n\$ "
 
 # Bind keyboard keys to behavior
 bind '"\e[A": history-search-backward'
